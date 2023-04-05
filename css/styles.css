@@ -486,11 +486,11 @@ body {
   height: 100%;
   background-color: var(--modal-overlay);
   opacity: 1;
-  transition: transform 250ms var(--cubic-timing), opacity 250ms var(--cubic-timing), visibility 250ms var(--cubic-timing);
+  transition: opacity 250ms var(--cubic-timing), visibility 250ms var(--cubic-timing);
 }
 .backdrop.is-hidden {
   pointer-events: none;
-  transform: scale(0.5);
+  /* transform: scale(0.5); */
   opacity: 0;
   visibility: hidden;
 }
@@ -503,11 +503,11 @@ body {
   padding: 24px;
   border-radius: 4px;
   background-color: var(--modal-background);
-  transform: translate(-50%, -50%) rotate(0);
+  transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 250ms var(--cubic-timing);
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) rotate(1.0turn);
+  transform: translate(-50%, -50%) scale(0.5) rotate(1.0turn);
 }
 .close-button {
   display: flex;
