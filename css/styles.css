@@ -335,6 +335,7 @@ body {
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
   color: var(--subtle-text);
+  transition: color 250ms var(--cubic-timing), border 250ms var(--cubic-timing);
 }
 .customers-link:hover,
 .customers-link:focus {
