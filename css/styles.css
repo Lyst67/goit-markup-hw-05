@@ -407,7 +407,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  padding: 40px 32px 164px;
+  padding: 40px 32px 0;
   background-color: var(--primary-brand);
   transform: translateY(100%);
   transition: transform 250ms var(--cubic-timing);
@@ -499,7 +499,6 @@ body {
   left: 50%;
   min-width: 408px;
   min-height: 576px;
-  padding: 24px;
   border-radius: 4px;
   background-color: var(--modal-background);
   transform: translate(-50%, -50%) scale(1) rotate(0);
@@ -509,10 +508,12 @@ body {
   transform: translate(-50%, -50%) scale(0.5) rotate(1.0turn);
 }
 .close-button {
+  position: absolute;
   display: flex;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
-  margin-left: auto;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
